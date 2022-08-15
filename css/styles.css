@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    max-width: 1400px;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+
+    background-color: #E5E5E5;
+}
+
+a {
+    text-decoration: unset;
+    color: unset;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 62px;
+    margin: 0%;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0%;
+}
+
+header {
+    background-color: #EFE6E4;
+}
+
+header * {
+    display: inline-block;
+}
+
+main {
+    background-color: #EFE6E4;
+}
+
+footer {
+    background-color: #EFE6E4;
+}
+
+.make-order {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    background-color: #CC8B86;
+}
+
+.achievements, .order-form {
+    background-color: #8D7370;
+}
+
+.hover-img  {
+    background: rgba(100, 72, 69, 0.8);
+}
+
+.team, .workflow {
+    background-color: #E2C4BA;
+}

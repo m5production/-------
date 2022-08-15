@@ -3,59 +3,63 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Дизайн-студия SCANDI</title>
 </head>
 
 <body>
-    <header>
-        <span><img src="images/header/logo.svg" width="25.34" height="25" alt="SCANDI logo."> SCANDI</span>
+    <header class="page-header">
+        <div class="wide-container">
+            <span><img src="images/header/logo.svg" width="25" height="25" alt="SCANDI logo."> SCANDI</span>
 
-        <nav>
-            <ul>
-                <li><a href="#about-company">О компании</a></li>
-                <li><a href="#portfolio">Портфолио</a></li>
-                <li><a href="#team">Команда</a></li>
-                <li><a href="#workflow">Как мы работаем</a></li>
-                <li><a href="#feedback">Отзывы клиентов</a></li>
-                <li><a href="#order-form">Оставить заявку</a></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#about-company">О компании</a></li>
+                    <li class="nav-item"><a href="#portfolio">Портфолио</a></li>
+                    <li class="nav-item"><a href="#team">Команда</a></li>
+                    <li class="nav-item"><a href="#workflow">Как мы работаем</a></li>
+                    <li class="nav-item"><a href="#feedback">Отзывы клиентов</a></li>
+                    <li class="nav-item"><a href="#order-form">Оставить заявку</a></li>
+                </ul>
+            </nav>
 
-        <span><a href="tel:+79818574624">+7 (981) 857-46-24</a></span>
-
+            <a href="tel:+79818574624" class="phone">+7 (981) 857-46-24</a>
+        </div>
     </header>
 
     <main>
-        <section>
-            <h1>Поможем сделать
+
+        <section class="promo">
+            <h1 class="main-heading">Поможем сделать
                 вашу квартиру
                 уютнее</h1>
             <p>Подбираем текстиль, мебель и аксессуары
-                под ваш интерьер, находим магазины
+                под&nbsp;ваш&nbsp;интерьер, находим магазины
                 и помогаем организовать доставку</p>
-            <div>
+            <div class="make-order reference">
                 <a href="#order-form">Оставить заявку</a>
             </div>
         </section>
 
         <section id="about-company">
-            <img src="images/about-us/vase-on-the-table.jpg" width="444.54" height="465"
-                alt="Красиво сервированный стол с вазой, бокалами для вина и столовыми приборами.">
-            <h2>О нас</h2>
+            <div class="container">
+                <img src="images/about-us/vase-on-the-table.jpg" class="about-img" width="445" height="465"
+                    alt="Красиво сервированный стол с вазой, бокалами для вина и столовыми приборами.">
+                <h2>О нас</h2>
 
-            <article>
-                <p>Премиальный европейский текстиль — одно из самых
-                    главных направлений работы коллектива. Создавать
-                    неповторимые интерьеры для наших дорогих
-                    клиентов, уделяя внимание мельчайшим деталям —
-                    вот то, что по-настоящему вдохновляет дизайнеров
-                    нашей студии.</p>
-                <p>Наш коллектив сделает все, чтобы после
-                    сотрудничества с нами, Вам было приятно сказать:
-                    «Да! Это именно то, что действительно достойно моего
-                    дома!»</p>
-            </article>
+                <article>
+                    <p>Премиальный европейский текстиль — одно из самых
+                        главных направлений работы коллектива. Создавать
+                        неповторимые интерьеры для наших дорогих
+                        клиентов, уделяя внимание мельчайшим деталям —
+                        вот то, что по-настоящему вдохновляет дизайнеров
+                        нашей студии.</p>
+                    <p>Наш коллектив сделает все, чтобы после
+                        сотрудничества с нами, Вам было приятно сказать:
+                        «Да! Это именно то, что действительно достойно моего
+                        дома!»</p>
+                </article>
+            </div>
 
             <div class="achievements">
                 <ol>
@@ -69,7 +73,7 @@
         <section id="portfolio">
             <h2>Наши работы</h2>
             <div class="studio-apartment">
-                <img src="images/portfolio/studio-30/hover-background.jpg" width="488" height="451"
+                <img src="images/portfolio/studio-30/hover-background.jpg" class="hover-img" width="488" height="451"
                     alt="Спальня с двуспальной кроватью в теплых цветах.">
                 <img src="images/portfolio/studio-30/kitchen.jpg" width="692" height="451"
                     alt="Кухня в студии с барной стойкой и стульями.">
@@ -77,23 +81,25 @@
                     alt="Угол с окном, диваном и комнатными растениями.">
                 <img src="images/portfolio/studio-30/bathroom.jpg" width="488" height="451"
                     alt="Ванная комната с полом из камней, растением, раковиной и самой ванной.">
-                <p>Квартира-студия 30 кв.м.</p> <!-- этот тескт и следующий абзац должны появляться при ховере-->
-                <p>В квартире были светлые стены и тёплые
-                    цвета. Мы сконцентрировались
-                    на отсылках к природе и сделали ребятам
-                    уютный интерьер, отсылающий к виллам
-                    островов Бали.</p>
+                <div class="hover-inscription">
+                    <p>Квартира-студия 30 кв.м.</p> <!-- этот тескт и следующий абзац должны появляться при ховере-->
+                    <p>В квартире были светлые стены и тёплые
+                        цвета. Мы сконцентрировались
+                        на отсылках к природе и сделали ребятам
+                        уютный интерьер, отсылающий к виллам
+                        островов Бали.</p>
+                </div>
             </div>
             <a href="">Смотреть еще</a>
             <!--После надписи должна быть стрелка вправо-->
         </section>
 
-        <section id="team">
+        <section id="team" class="team">
             <h2>Команда</h2>
-            <ul>
+            <ul class="team-list">
                 <li>
                     <figure>
-                        <img src="images/team/Masha.jpg" width="320" height="253"
+                        <img src="images/team/Masha.jpg" class="team-member-img" width="320" height="253"
                             alt="Европейская девушка с длинными волнистыми рыжими волосами.">
                         <figcaption>Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, приезжает к вам
                             домой, общается и помогает сделать вашу квартиру красивой и уютной.</figcaption>
@@ -101,7 +107,7 @@
                 </li>
                 <li>
                     <figure>
-                        <img src="images/team/Sasha.png" width="320" height="253"
+                        <img src="images/team/Sasha.png" class="team-member-img" width="320" height="253"
                             alt="Европейская девушка со светлыми волосами на желтом фоне стоит боком и поворачивается к камере.">
                         <figcaption>С нашим менеджером Сашей вы познакомитесь в первую очередь. Она проконсультирует
                             вас, соберёт все документы и ответит на все вопросы.</figcaption>
@@ -109,7 +115,7 @@
                 </li>
                 <li>
                     <figure>
-                        <img src="images/team/Katya.jpg" width="320" height="253"
+                        <img src="images/team/Katya.jpg" class="team-member-img" width="320" height="253"
                             alt="Европейская девушка с длинными светлыми волосами улыбается в камеру.">
                         <figcaption>Катя тоже занимается дизайном. Она всегда находит общий язык с клиентами и точно
                             знает, как обустроить дом так, чтобы вам понравилось.</figcaption>
@@ -118,7 +124,7 @@
             </ul>
         </section>
 
-        <section id="workflow">
+        <section id="workflow" class="workflow">
             <h2>Как мы работаем</h2>
             <ol>
                 <li>Знакомимся, выезжаем на объект, утверждаем концепцию, подписываем договор.</li>
@@ -148,19 +154,19 @@
             <button type="button" class="next-review"></button>
         </section>
 
-        <section id="order-form">
+        <section id="order-form" class="order-form">
             <h2>Оставить заявку</h2>
             <p>Оставьте свои контакты. Менеджер перезвонит в удобное вам время и ответит на все вопросы.</p>
             <span>Ваше имя</span>
             <span>Введите телефон</span>
-            <button>Оставить заявку</button>
+            <button class="make-order button">Оставить заявку</button>
 
             <img src="images/make-order/location.png" width="590" height="624" alt="Местоположение студии на карте.">
         </section>
     </main>
 
     <footer>
-        <span><a href="tel:+79818574624">+7 (981) 857-46-24</a></span>
+        <a href="tel:+79818574624" class="phone">+7 (981) 857-46-24</a>
         <span>г. Санкт-петербург, ул. Большая Конюшенная, 19</span>
         <span>ИП Королёва А.А.</span>
     </footer>
