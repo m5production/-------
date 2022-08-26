@@ -9,12 +9,14 @@
 
 <body>
     <header class="page-header">
-        <div class="wide-container">
-            <span><img src="images/header/logo.svg" width="25" height="25" alt="SCANDI logo."> SCANDI</span>
+        <div class="wrapper-header-footer">
+            <a href="#" class="logo">
+                <img src="images/header/logo.svg" width="25" height="25" alt="SCANDI logo."> SCANDI
+            </a>
 
-            <nav>
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="#about-company">О компании</a></li>
+            <nav class="main-nav">
+                <ul class="nav-list reset-list">
+                    <li class="nav-item"><a href="#about">О компании</a></li>
                     <li class="nav-item"><a href="#portfolio">Портфолио</a></li>
                     <li class="nav-item"><a href="#team">Команда</a></li>
                     <li class="nav-item"><a href="#workflow">Как мы работаем</a></li>
@@ -23,31 +25,35 @@
                 </ul>
             </nav>
 
-            <a href="tel:+79818574624" class="phone">+7 (981) 857-46-24</a>
+            <a href="tel:+79818574624" class="scandi-phone">+7&nbsp;(981)&nbsp;857-46-24</a>
         </div>
     </header>
 
     <main>
 
-        <section class="promo">
-            <h1 class="main-heading">Поможем сделать
-                вашу квартиру
-                уютнее</h1>
-            <p>Подбираем текстиль, мебель и аксессуары
-                под&nbsp;ваш&nbsp;интерьер, находим магазины
-                и помогаем организовать доставку</p>
-            <div class="make-order reference">
-                <a href="#order-form">Оставить заявку</a>
+        <section class="hero">
+            <div class="hero-wrapper">
+
+                <h1 class="main-heading">Поможем сделать
+                    вашу квартиру
+                    уютнее</h1>
+
+                <p class="hero-text">Подбираем текстиль, мебель и аксессуары
+                    под&nbsp;ваш&nbsp;интерьер, находим магазины
+                    и помогаем организовать доставку</p>
+
+                <a class="make-order" href="#order-form">Оставить заявку</a>
             </div>
         </section>
 
-        <section id="about-company">
-            <div class="container">
-                <img src="images/about-us/vase-on-the-table.jpg" class="about-img" width="445" height="465"
-                    alt="Красиво сервированный стол с вазой, бокалами для вина и столовыми приборами.">
-                <h2>О нас</h2>
+        <section id="about">
+            <div class="about-wrapper">
+                <h2 class="section-header">О нас</h2>
 
-                <article>
+                <img class="about-img" src="images/about-us/vase-on-the-table.jpg" width="445" height="465"
+                    alt="Красиво сервированный стол с вазой, бокалами для вина и столовыми приборами.">
+
+                <article class="about-text">
                     <p>Премиальный европейский текстиль — одно из самых
                         главных направлений работы коллектива. Создавать
                         неповторимые интерьеры для наших дорогих
@@ -61,33 +67,41 @@
                 </article>
             </div>
 
-            <div class="achievements">
-                <ol>
-                    <li><span>5</span> лет опыта</li>
-                    <li><span>100</span> проектов</li>
-                    <li><span>10</span> наград</li>
-                </ol>
-            </div>
+            <ol class="reset-list achievements-list">
+                <li class="achievements-list-item"><span class="achievemnts-item-figure">5</span> лет опыта</li>
+                <li class="achievements-list-item"><span class="achievemnts-item-figure">100</span> проектов</li>
+                <li class="achievements-list-item"><span class="achievemnts-item-figure">10</span> наград</li>
+            </ol>
         </section>
 
         <section id="portfolio">
-            <h2>Наши работы</h2>
-            <div class="studio-apartment">
-                <img src="images/portfolio/studio-30/hover-background.jpg" class="hover-img" width="488" height="451"
-                    alt="Спальня с двуспальной кроватью в теплых цветах.">
-                <img src="images/portfolio/studio-30/kitchen.jpg" width="692" height="451"
-                    alt="Кухня в студии с барной стойкой и стульями.">
-                <img src="images/portfolio/studio-30/dining-room.jpg" width="692" height="451"
-                    alt="Угол с окном, диваном и комнатными растениями.">
-                <img src="images/portfolio/studio-30/bathroom.jpg" width="488" height="451"
-                    alt="Ванная комната с полом из камней, растением, раковиной и самой ванной.">
-                <div class="hover-inscription">
-                    <p>Квартира-студия 30 кв.м.</p> <!-- этот тескт и следующий абзац должны появляться при ховере-->
-                    <p>В квартире были светлые стены и тёплые
-                        цвета. Мы сконцентрировались
-                        на отсылках к природе и сделали ребятам
-                        уютный интерьер, отсылающий к виллам
-                        островов Бали.</p>
+            <div class="portfolio-wrapper">
+                <h2 class="section-header align-left">Наши работы</h2>
+
+                <div class="studio-apartment">
+                    <div class="hover-img">
+                        <div class="hover-inscription">
+                            <p class="hover-heading">Квартира-студия 30 кв.м.</p>
+                            <!-- этот тескт и следующий абзац должны появляться при ховере-->
+                            <p class="hover-text">В квартире были светлые стены и тёплые
+                                цвета. Мы сконцентрировались
+                                на отсылках к природе и сделали ребятам
+                                уютный интерьер, отсылающий к виллам
+                                островов Бали.</p>
+                        </div>
+                        <img src="images/portfolio/studio-30/hover-background.jpg" class="hover-img" width="488"
+                            height="451" alt="Спальня с двуспальной кроватью в теплых цветах.">
+                    </div>
+                    <img src="images/portfolio/studio-30/kitchen.jpg" width="692" height="451"
+                        alt="Кухня в студии с барной стойкой и стульями.">
+                    <img src="images/portfolio/studio-30/dining-room.jpg" width="692" height="451"
+                        alt="Угол с окном, диваном и комнатными растениями.">
+                    <img src="images/portfolio/studio-30/bathroom.jpg" width="488" height="451"
+                        alt="Ванная комната с полом из камней, растением, раковиной и самой ванной.">
+
+                    <div class="hover-inscription">
+
+                    </div>
                 </div>
             </div>
             <a href="">Смотреть еще</a>
@@ -95,7 +109,8 @@
         </section>
 
         <section id="team" class="team">
-            <h2>Команда</h2>
+            <h2 class="section-header">Команда</h2>
+
             <ul class="team-list">
                 <li>
                     <figure>
@@ -125,7 +140,7 @@
         </section>
 
         <section id="workflow" class="workflow">
-            <h2>Как мы работаем</h2>
+            <h2 class="section-header">Как мы работаем</h2>
             <ol>
                 <li>Знакомимся, выезжаем на объект, утверждаем концепцию, подписываем договор.</li>
                 <li>Подбираем мебель, текстиль, аксессуары. Делаем 3D- визуализацию.</li>
@@ -135,7 +150,7 @@
         </section>
 
         <section id="feedback">
-            <h2>Отзывы</h2>
+            <h2 class="section-header">Отзывы</h2>
             <button type="button" class="previous-review"></button>
             <article>
                 <blockquote>
@@ -155,11 +170,11 @@
         </section>
 
         <section id="order-form" class="order-form">
-            <h2>Оставить заявку</h2>
+            <h2 class="section-header">Оставить заявку</h2>
             <p>Оставьте свои контакты. Менеджер перезвонит в удобное вам время и ответит на все вопросы.</p>
             <span>Ваше имя</span>
             <span>Введите телефон</span>
-            <button class="make-order button">Оставить заявку</button>
+            <button class="make-order button" type="submit">Оставить заявку</button>
 
             <img src="images/make-order/location.png" width="590" height="624" alt="Местоположение студии на карте.">
         </section>

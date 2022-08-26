@@ -14,70 +14,199 @@
     font-display: swap;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 body {
     max-width: 1400px;
-    margin: auto;
+    margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
-
-    background-color: #E5E5E5;
+    color: #533738;
+    background-color: #EFE6E4;
 }
 
-a {
-    text-decoration: unset;
-    color: unset;
+.reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-h1 {
-    font-weight: 400;
+/*=============================== HEADER ==============================*/
+
+.page-header {
+    position: absolute;
+    top: 36px;
+    left: 0;
+    width: 100%;
+}
+
+.wrapper-header-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.logo {
+    margin-right: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main-nav {
+    min-width: 70%;
+    margin-left: auto;
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.scandi-phone {
+    margin-left: auto;
+}
+
+/* ============================ HERO ================================= */
+
+.hero {
+    min-height: 715px;
+    background-image: url(/images/moto-SCANDI/background.jpg);
+    background-repeat: no-repeat;
+}
+
+.hero-wrapper {
+    padding: 11% 13%;
+    max-width: 38%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 24px;
+}
+
+.main-heading {
+    margin: 0;
+    font-weight: normal;
     font-size: 50px;
     line-height: 62px;
-    margin: 0%;
 }
 
-h2 {
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 50px;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 0%;
-}
-
-header {
-    background-color: #EFE6E4;
-}
-
-header * {
-    display: inline-block;
-}
-
-main {
-    background-color: #EFE6E4;
-}
-
-footer {
-    background-color: #EFE6E4;
+.hero-text {
+    margin: 0;
+    max-width: 85%;
 }
 
 .make-order {
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 310px;
+    height: 74px;
+    background-color: #CC8B86;
+    border: none;
+
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
-    background-color: #CC8B86;
 }
 
-.achievements, .order-form {
+/* =============================ABOUT============================= */
+
+.about-wrapper {
+    padding: 65px 128px;
+    display: grid;
+    gap: 40px;
+    grid-template-areas: "head head"
+                         "img text";
+}
+
+.section-header {
+    grid-area: head;
+    display: flex;
+    justify-content: center;
+
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.about-img {
+    grid-area: img;
+}
+
+.about-text {
+    grid-area: text;
+}
+
+/* ======================ACHIEVEMENTS======================= */
+
+.achievements-list {
+    height: 273px;
     background-color: #8D7370;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.hover-img  {
-    background: rgba(100, 72, 69, 0.8);
+.achievements-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
 }
 
-.team, .workflow {
-    background-color: #E2C4BA;
+.achievemnts-item-figure {
+    font-weight: normal;
+    font-size: 52px;
+    line-height: 62px;
+}
+
+/* ===============================PORTFOLIO=========================== */
+
+.portfolio-wrapper {
+    margin: 65px auto 0;
+    width: 1200px;
+}
+
+.align-left {
+    justify-content: left;
+}
+
+.hover-inscription {
+    display: none;
+}
+
+.studio-apartment {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hover-img:hover .hover-inscription {
+    position: absolute;
+    width: 488px;
+    height: 451px;
+    background-color: #CC8B86;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    color: #fff;
 }
