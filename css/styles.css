@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 @font-face {
     font-family: 'Montserrat';
     src: url('../fonts/Montserrat-Medium.woff2') format('woff2');
@@ -15,35 +15,42 @@
     font-display: swap;
 }
 
-a {
+.link {
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     color: inherit;
 }
 
-p {
+.basic-text {
     margin: 0;
-}
+    padding: 0;
 
-body {
-    max-width: 1400px;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
+}
+
+body {
+    max-width: 1400px;
+    margin: 0 auto;
     color: #533738;
     background-color: #EFE6E4;
 }
 
-.reset-list {
+.list {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.reset-header {
+.heading {
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
     margin: 0;
     padding: 0;
+    padding-bottom: 40px;
 }
 
 /*=============================== HEADER ==============================*/
@@ -59,7 +66,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 
     font-size: 16px;
@@ -67,57 +74,48 @@ body {
 }
 
 .logo {
-    margin-right: auto;
+    text-transform: uppercase;
+    margin-right: 89px;
     display: flex;
-    justify-content: flex-start;
+    align-items: center;
 }
 
 .main-nav {
-    min-width: 70%;
-    margin-left: auto;
+    min-width: 708px;
+    margin-right: 35px;
 }
 
 .nav-list {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.scandi-phone {
-    margin-left: auto;
+    justify-content: flex-start;
+    gap: 26px;
 }
 
 /* ============================ HERO ================================= */
 
 .hero {
+    box-sizing: border-box;
+    padding: 152px 0 0 184px;
     min-height: 715px;
     background-image: url("../images/moto-SCANDI/background.jpg");
     background-repeat: no-repeat;
 }
 
-.hero-wrapper {
-    padding: 11% 13%;
-    max-width: 38%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 24px;
-}
-
 .main-heading {
-    margin: 0;
-    font-weight: normal;
+    padding: 0;
+    max-width: 534px;
     font-size: 50px;
     line-height: 62px;
 }
 
 .hero-text {
-    margin: 0;
-    max-width: 85%;
+    margin-top: 24px;
+    margin-bottom: 21px;
+    max-width: 493px;
 }
 
 .make-order {
-    box-sizing: content-box;
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,30 +125,25 @@ body {
     background-color: #CC8B86;
     border: none;
 
+    font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
+    color: #533738;
 
     cursor: pointer;
 }
 
 /* =============================ABOUT============================= */
 
-.about-wrapper {
-    max-width: 1036px;
+.about-section {
     padding-top: 65px;
-    padding-bottom: 21px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-areas: "head  head"
-        "img   text";
 }
 
 .section-header {
-    grid-area: head;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
 
     font-weight: normal;
     font-size: 40px;
@@ -158,28 +151,30 @@ body {
     text-transform: uppercase;
 }
 
-.about-img {
-    grid-area: img;
-    margin-right: 40px;
+.about-wrapper {
+    margin: 0 182px;
+    display: flex;
+    gap: 63px;
 }
 
-.text-paragraphs {
-    margin: 0;
+.about-text {
+    height: 330px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    gap: 30px;
+    justify-content: space-between;
 }
-
 
 
 /* ======================ACHIEVEMENTS======================= */
 
 .achievements-list {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 21px;
     height: 273px;
     background-color: #8D7370;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 269px;
     align-items: center;
 }
 
@@ -281,6 +276,7 @@ body {
 
 .team-section-wrapper {
     padding-top: 50px;
+    padding-bottom: 35px;
 }
 
 .team-list {
@@ -370,8 +366,11 @@ body {
     gap: 20px;
 }
 
-.review .text-paragraphs {
-    justify-content: center;
+.customer-quote {
+    height: 408px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .cited-customer {
@@ -406,14 +405,14 @@ body {
     margin: 0;
 }
 
-.form-wrapper> :nth-child(2) {
+.order-form-text {
     position: relative;
     top: -11px;
     opacity: 0.6;
 }
 
 .order-form {
-    max-width: 508px;
+    width: 508px;
     display: flex;
     flex-direction: column;
     gap: 35px;
@@ -463,471 +462,4 @@ body {
 
 .scandi-owner {
     margin-left: auto;
-=======
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../fonts/Montserrat-Medium.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../fonts/Montserrat-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-p {
-    margin: 0;
-}
-
-body {
-    max-width: 1400px;
-    margin: 0 auto;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
-    color: #533738;
-    background-color: #EFE6E4;
-}
-
-.reset-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.reset-header {
-    margin: 0;
-    padding: 0;
-}
-
-/*=============================== HEADER ==============================*/
-
-.page-header {
-    position: absolute;
-    top: 36px;
-    left: 0;
-    width: 100%;
-}
-
-.wrapper-header-footer {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    font-size: 16px;
-    line-height: 20px;
-}
-
-.logo {
-    margin-right: auto;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.main-nav {
-    min-width: 70%;
-    margin-left: auto;
-}
-
-.nav-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.scandi-phone {
-    margin-left: auto;
-}
-
-/* ============================ HERO ================================= */
-
-.hero {
-    min-height: 715px;
-    background-image: url("/images/moto-SCANDI/background.jpg");
-    background-repeat: no-repeat;
-}
-
-.hero-wrapper {
-    padding: 11% 13%;
-    max-width: 38%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 24px;
-}
-
-.main-heading {
-    margin: 0;
-    font-weight: normal;
-    font-size: 50px;
-    line-height: 62px;
-}
-
-.hero-text {
-    margin: 0;
-    max-width: 85%;
-}
-
-.make-order {
-    box-sizing: content-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 310px;
-    height: 74px;
-    background-color: #CC8B86;
-    border: none;
-
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-
-    cursor: pointer;
-}
-
-/* =============================ABOUT============================= */
-
-.about-wrapper {
-    max-width: 1036px;
-    padding-top: 65px;
-    padding-bottom: 21px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-areas: "head  head"
-        "img   text";
-}
-
-.section-header {
-    grid-area: head;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 40px;
-
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 50px;
-    text-transform: uppercase;
-}
-
-.about-img {
-    grid-area: img;
-    margin-right: 40px;
-}
-
-.text-paragraphs {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 30px;
-}
-
-
-
-/* ======================ACHIEVEMENTS======================= */
-
-.achievements-list {
-    height: 273px;
-    background-color: #8D7370;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.achievements-list-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #fff;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 37px;
-}
-
-.achievemnts-item-figure {
-    font-weight: normal;
-    font-size: 52px;
-    line-height: 62px;
-}
-
-/* ===============================PORTFOLIO=========================== */
-
-.portfolio-wrapper {
-    margin: 65px auto 0;
-    width: 1200px;
-}
-
-.align-left {
-    justify-content: left;
-}
-
-.hover-inscription {
-    display: none;
-}
-
-.studio-apartment {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.hover-img:hover .hover-inscription {
-    position: absolute;
-    width: 488px;
-    height: 451px;
-    background-color: rgba(100, 72, 69, 0.8);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    color: #fff;
-}
-
-.hover-heading {
-    width: 270px;
-
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 37px;
-    text-align: center;
-}
-
-.hover-text {
-    width: 418px;
-}
-
-.portfolio-img {
-    margin-bottom: 30px;
-}
-
-.portfolio-link-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.portfolio-link {
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 37px;
-}
-
-.portfolio-link::after {
-    display: inline-block;
-    content: "";
-    width: 65px;
-    height: 1em;
-    background-image: url("/images/portfolio/right-arrow.svg");
-    background-repeat: no-repeat;
-    background-position: 5px 14px;
-}
-
-/* =================================TEAM=============================== */
-
-.team {
-    margin-top: 65px;
-    background-color: #E2C4BA;
-}
-
-.team-section-wrapper {
-    padding-top: 50px;
-}
-
-.team-list {
-    display: flex;
-    justify-content: center;
-    gap: 38px;
-}
-
-.team-member {
-    width: 320px;
-}
-
-/* ================================WORKFLOW============================ */
-
-.workflow {
-    background-color: #E2C4BA;
-    padding-bottom: 80px;
-}
-
-.workflow-list {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.workflow-step {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    width: 285px;
-    text-align: center;
-}
-
-.step-marker {
-    flex-shrink: 0;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background-color: #8D7370;
-
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 30px;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/* =============================FEEDBACK=============================== */
-
-.feedback-header {
-    padding-top: 65px;
-}
-
-.feedback-wrapper {
-    padding: 0 182px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 65px;
-}
-
-.feedback-button {
-    width: 72px;
-    height: 72px;
-    border: none;
-    border-radius: 50%;
-    flex-shrink: 0;
-    background-color: #CC8B86;
-    background-image: url("/images/make-order/Arrow.svg");
-    background-repeat: no-repeat;
-    background-size: 32px;
-    background-position: center;
-    cursor: pointer;
-}
-
-.previous-review {
-    transform: rotate(180deg);
-}
-
-.review {
-    margin: 0 29px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.review .text-paragraphs {
-    justify-content: center;
-}
-
-.cited-customer {
-    font-style: normal;
-    text-transform: uppercase;
-}
-
-.feedback-images {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-/* ==============================ORDER-FORM========================== */
-
-.order-form-section {
-    background-color: #8D7370;
-    display: flex;
-    padding: 0 100px 0 182px;
-    color: #F6EDE9;
-}
-
-.form-wrapper {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
-    align-items: flex-start;
-}
-
-.order-form-section .section-header {
-    margin: 0;
-}
-
-.form-wrapper> :nth-child(2) {
-    position: relative;
-    top: -11px;
-    opacity: 0.6;
-}
-
-.order-form {
-    max-width: 508px;
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
-}
-
-.form-field {
-    height: 35px;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid #fff;
-
-    color: #F6EDE9;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
-}
-
-.form-field::placeholder {
-    color: #F6EDE9;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
-}
-
-.order-form> :last-child {
-    margin-top: -4px;
-}
-
-/* ================================FOOTER============================ */
-
-.page-footer {
-    margin: 37px auto;
-    max-width: 1200px;
-    display: flex;
-}
-
-.page-footer .scandi-phone {
-    margin: 0;
-    margin-right: 42px;
-}
-
-.scandi-owner {
-    margin-left: auto;
->>>>>>> 80cf877f9b45cf548686c518077a7276af152ebd
 }
