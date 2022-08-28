@@ -25,7 +25,6 @@ p {
 
 body {
     max-width: 1400px;
-    margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -91,7 +90,7 @@ body {
 
 .hero {
     min-height: 715px;
-    background-image: url("/images/moto-SCANDI/background.jpg");
+    background-image: url("../images/moto-SCANDI/background.jpg");
     background-repeat: no-repeat;
 }
 
@@ -267,7 +266,7 @@ body {
     content: "";
     width: 65px;
     height: 1em;
-    background-image: url("/images/portfolio/right-arrow.svg");
+    background-image: url("../images/portfolio/right-arrow.svg");
     background-repeat: no-repeat;
     background-position: 5px 14px;
 }
@@ -352,7 +351,7 @@ body {
     border-radius: 50%;
     flex-shrink: 0;
     background-color: #CC8B86;
-    background-image: url("/images/make-order/Arrow.svg");
+    background-image: url("../images/make-order/Arrow.svg");
     background-repeat: no-repeat;
     background-size: 32px;
     background-position: center;
