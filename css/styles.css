@@ -91,7 +91,7 @@ body {
 
 .hero {
     min-height: 715px;
-    background-image: url(/images/moto-SCANDI/background.jpg);
+    background-image: url("/images/moto-SCANDI/background.jpg");
     background-repeat: no-repeat;
 }
 
