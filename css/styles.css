@@ -19,6 +19,10 @@ a {
     color: inherit;
 }
 
+p {
+    margin: 0;
+}
+
 body {
     max-width: 1400px;
     margin: 0 auto;
@@ -35,6 +39,11 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+.reset-header {
+    margin: 0;
+    padding: 0;
 }
 
 /*=============================== HEADER ==============================*/
@@ -121,22 +130,27 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
+
+    cursor: pointer;
 }
 
 /* =============================ABOUT============================= */
 
 .about-wrapper {
-    padding: 65px 128px;
+    max-width: 1036px;
+    padding-top: 65px;
+    padding-bottom: 21px;
+    margin: 0 auto;
     display: grid;
-    gap: 40px;
-    grid-template-areas: "head head"
-                         "img text";
+    grid-template-areas: "head  head"
+        "img   text";
 }
 
 .section-header {
     grid-area: head;
     display: flex;
     justify-content: center;
+    margin-bottom: 40px;
 
     font-weight: normal;
     font-size: 40px;
@@ -146,11 +160,18 @@ body {
 
 .about-img {
     grid-area: img;
+    margin-right: 40px;
 }
 
-.about-text {
-    grid-area: text;
+.text-paragraphs {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
 }
+
+
 
 /* ======================ACHIEVEMENTS======================= */
 
@@ -203,10 +224,243 @@ body {
     position: absolute;
     width: 488px;
     height: 451px;
-    background-color: #CC8B86;
+    background-color: rgba(100, 72, 69, 0.8);
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
 
     color: #fff;
+}
+
+.hover-heading {
+    width: 270px;
+
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+}
+
+.hover-text {
+    width: 418px;
+}
+
+.portfolio-img {
+    margin-bottom: 30px;
+}
+
+.portfolio-link-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-link {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+}
+
+.portfolio-link::after {
+    display: inline-block;
+    content: "";
+    width: 65px;
+    height: 1em;
+    background-image: url("/images/portfolio/right-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: 5px 14px;
+}
+
+/* =================================TEAM=============================== */
+
+.team {
+    margin-top: 65px;
+    background-color: #E2C4BA;
+}
+
+.team-section-wrapper {
+    padding-top: 50px;
+}
+
+.team-list {
+    display: flex;
+    justify-content: center;
+    gap: 38px;
+}
+
+.team-member {
+    width: 320px;
+}
+
+/* ================================WORKFLOW============================ */
+
+.workflow {
+    background-color: #E2C4BA;
+    padding-bottom: 80px;
+}
+
+.workflow-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.workflow-step {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 285px;
+    text-align: center;
+}
+
+.step-marker {
+    flex-shrink: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #8D7370;
+
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 30px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* =============================FEEDBACK=============================== */
+
+.feedback-header {
+    padding-top: 65px;
+}
+
+.feedback-wrapper {
+    padding: 0 182px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 65px;
+}
+
+.feedback-button {
+    width: 72px;
+    height: 72px;
+    border: none;
+    border-radius: 50%;
+    flex-shrink: 0;
+    background-color: #CC8B86;
+    background-image: url("/images/make-order/Arrow.svg");
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position: center;
+    cursor: pointer;
+}
+
+.previous-review {
+    transform: rotate(180deg);
+}
+
+.review {
+    margin: 0 29px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.review .text-paragraphs {
+    justify-content: center;
+}
+
+.cited-customer {
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.feedback-images {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* ==============================ORDER-FORM========================== */
+
+.order-form-section {
+    background-color: #8D7370;
+    display: flex;
+    padding: 0 100px 0 182px;
+    color: #F6EDE9;
+}
+
+.form-wrapper {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: flex-start;
+}
+
+.order-form-section .section-header {
+    margin: 0;
+}
+
+.form-wrapper> :nth-child(2) {
+    position: relative;
+    top: -11px;
+    opacity: 0.6;
+}
+
+.order-form {
+    max-width: 508px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.form-field {
+    height: 35px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+
+    color: #F6EDE9;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.form-field::placeholder {
+    color: #F6EDE9;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.order-form> :last-child {
+    margin-top: -4px;
+}
+
+/* ================================FOOTER============================ */
+
+.page-footer {
+    margin: 37px auto;
+    max-width: 1200px;
+    display: flex;
+}
+
+.page-footer .scandi-phone {
+    margin: 0;
+    margin-right: 42px;
+}
+
+.scandi-owner {
+    margin-left: auto;
 }
